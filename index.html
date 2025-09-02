@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devamruth A - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Devamruth A</a>
+            <nav class="desktop-nav-links">
+                <a href="#about" class="nav-link-item">About</a>
+                <a href="#skills" class="nav-link-item">Skills</a>
+                <a href="#projects" class="nav-link-item">Projects</a>
+                <a href="#contact" class="nav-link-item">Contact</a>
+            </nav>
+            <div class="mobile-menu-icon" id="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-close" id="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <a href="#about" class="mobile-nav-link-item">About</a>
+        <a href="#skills" class="mobile-nav-link-item">Skills</a>
+        <a href="#projects" class="mobile-nav-link-item">Projects</a>
+        <a href="#contact" class="mobile-nav-link-item">Contact</a>
+    </div>
+
+    <main>
+        <section id="home" class="hero container animated-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="title">Hi, I'm Devamruth</h1>
+                    <p class="subtitle">A Creative Developer from Kanhangad, Kerala</p>
+                    <a href="#projects" class="cta-button">View My Work</a>
+                </div>
+                <div class="hero-animation" id="hero-animation">
+                    <lottie-player src="./assets/astronaut.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about animated-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="content-wrapper">
+                    <img src="./assets/profile.png" alt="Profile" class="profile-image">
+                    <p class="description">I'm a passionate developer specializing in creating beautiful, functional, and user-centric web applications. My journey in technology is driven by a constant curiosity and a desire to build things that solve real-world problems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills animated-section">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon"></i>
+                <p class="skill-name">HTML</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <p class="skill-name">CSS</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square skill-icon"></i>
+                <p class="skill-name">JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react skill-icon"></i>
+                <p class="skill-name">React</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <p class="skill-name">MongoDB</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node-js skill-icon"></i>
+                <p class="skill-name">Node.js</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server skill-icon"></i>
+                <p class="skill-name">Express.js</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-bootstrap skill-icon"></i>
+                <p class="skill-name">Bootstrap</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt skill-icon"></i>
+                <p class="skill-name">Git</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-github skill-icon"></i>
+                <p class="skill-name">GitHub</p>
+            </div>
+             <div class="skill-card">
+                <i class="fab fa-figma skill-icon"></i>
+                <p class="skill-name">Figma</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-c skill-icon"></i>
+                <p class="skill-name">C</p>
+            </div>
+            ~
+        </div>
+    </div>
+</section>
+
+        <section id="projects" class="projects animated-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="./assets/project1.png" alt="Project One" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Course Selling Platform</h3>
+                            <p class="project-description">A brief description of this awesome project. It solves a real problem and uses modern tech.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Vite</span>
+                                <span class="project-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./assets/project2.png" alt="Project Two" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Crop disease prediction</h3>
+                            <p class="project-description">This project showcases my Knowledge on building ML models .</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Flask</span>
+                                <span class="project-tag">ML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./assets/devcal1.jpeg" alt="Android calculator" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Calculator Application</h3>
+                            <p class="project-description">This project showcases my Native react skills in app building</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Express</span>
+                                <span class="project-tag">Native react</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./assets/movie.png" alt="Android calculator" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Movie App</h3>
+                            <p class="project-description">This project showcases my Skills in React</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">App Write</span>
+                                <span class="project-tag">React</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact animated-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-text">
+                    I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out to me via email or connect with me on social media.
+                </p>
+                <a href="mailto:devamruth6282@gmail.com" class="email-button">Email Me</a>
+                <div class="social-links">
+                    <a href="mailto:devamruth6282@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Email me"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/de_va_mr_uth_/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/devamruth-a-7a65b832a/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Devamruth A. All Rights Reserved in Kanhangad, Kerala.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
