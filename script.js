@@ -126,3 +126,38 @@ if (modal) {
         }
     });
 }
+
+// --- NEW IMAGE LIGHTBOX LOGIC ---
+document.addEventListener('DOMContentLoaded', () => {
+    // This assumes the rest of your script is inside this event listener
+    
+    const modalImage = document.getElementById('modal-image');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    if (modalImage && lightbox && lightboxImage && lightboxClose) {
+        // When the image inside the modal is clicked
+        modalImage.addEventListener('click', () => {
+            // Set the lightbox image source to the modal image source
+            lightboxImage.src = modalImage.src;
+            // Show the lightbox
+            lightbox.classList.add('show');
+        });
+
+        // Function to close the lightbox
+        const closeLightbox = () => {
+            lightbox.classList.remove('show');
+        };
+
+        // Close lightbox when the close button is clicked
+        lightboxClose.addEventListener('click', closeLightbox);
+        
+        // Close lightbox when the overlay is clicked
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    }
+});
