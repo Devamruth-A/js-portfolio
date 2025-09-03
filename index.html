@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+
     <header class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">Devamruth A</a>
@@ -16,6 +17,7 @@
                 <a href="#about" class="nav-link-item">About</a>
                 <a href="#skills" class="nav-link-item">Skills</a>
                 <a href="#projects" class="nav-link-item">Projects</a>
+                <a href="#achievements" class="nav-link-item">Achievements</a>
                 <a href="#contact" class="nav-link-item">Contact</a>
             </nav>
             <div class="mobile-menu-icon" id="mobile-menu-icon">
@@ -31,6 +33,7 @@
         <a href="#about" class="mobile-nav-link-item">About</a>
         <a href="#skills" class="mobile-nav-link-item">Skills</a>
         <a href="#projects" class="mobile-nav-link-item">Projects</a>
+        <a href="#achievements" class="mobile-nav-link-item">Achievements</a>
         <a href="#contact" class="mobile-nav-link-item">Contact</a>
     </div>
 
@@ -59,94 +62,64 @@
         </section>
 
         <section id="skills" class="skills animated-section">
-    <div class="container">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-html5 skill-icon"></i>
-                <p class="skill-name">HTML</p>
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-html5 skill-icon"></i><p class="skill-name">HTML</p></div>
+                    <div class="skill-card"><i class="fab fa-css3-alt skill-icon"></i><p class="skill-name">CSS</p></div>
+                    <div class="skill-card"><i class="fab fa-js-square skill-icon"></i><p class="skill-name">JavaScript</p></div>
+                    <div class="skill-card"><i class="fab fa-react skill-icon"></i><p class="skill-name">React</p></div>
+                    <div class="skill-card"><i class="fas fa-database skill-icon"></i><p class="skill-name">MongoDB</p></div>
+                    <div class="skill-card"><i class="fab fa-node-js skill-icon"></i><p class="skill-name">Node.js</p></div>
+                    <div class="skill-card"><i class="fas fa-server skill-icon"></i><p class="skill-name">Express.js</p></div>
+                    <div class="skill-card"><i class="fab fa-bootstrap skill-icon"></i><p class="skill-name">Bootstrap</p></div>
+                    <div class="skill-card"><i class="fab fa-git-alt skill-icon"></i><p class="skill-name">Git</p></div>
+                    <div class="skill-card"><i class="fab fa-github skill-icon"></i><p class="skill-name">GitHub</p></div>
+                    <div class="skill-card"><i class="fab fa-figma skill-icon"></i><p class="skill-name">Figma</p></div>
+                    <div class="skill-card"><i class="fas fa-c skill-icon"></i><p class="skill-name">C</p></div>
+                </div>
             </div>
-            <div class="skill-card">
-                <i class="fab fa-css3-alt skill-icon"></i>
-                <p class="skill-name">CSS</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-js-square skill-icon"></i>
-                <p class="skill-name">JavaScript</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-react skill-icon"></i>
-                <p class="skill-name">React</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database skill-icon"></i>
-                <p class="skill-name">MongoDB</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-node-js skill-icon"></i>
-                <p class="skill-name">Node.js</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-server skill-icon"></i>
-                <p class="skill-name">Express.js</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-bootstrap skill-icon"></i>
-                <p class="skill-name">Bootstrap</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-git-alt skill-icon"></i>
-                <p class="skill-name">Git</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-github skill-icon"></i>
-                <p class="skill-name">GitHub</p>
-            </div>
-             <div class="skill-card">
-                <i class="fab fa-figma skill-icon"></i>
-                <p class="skill-name">Figma</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-c skill-icon"></i>
-                <p class="skill-name">C</p>
-            </div>
-            
-        </div>
-    </div>
-</section>
+        </section>
 
         <section id="projects" class="projects animated-section">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <img src="./assets/project1.png" alt="Project One" class="project-image">
+                        <img src="./assets/project1.png" alt="Course Selling Platform" class="project-image">
                         <div class="project-content">
                             <h3 class="project-title">Course Selling Platform</h3>
-                            <p class="project-description">A brief description of this awesome project. It solves a real problem and uses modern tech.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">React</span>
-                                <span class="project-tag">Vite</span>
-                                <span class="project-tag">MongoDB</span>
-                            </div>
+                            <p class="project-description">A platform for buying and selling educational courses, built with modern web technologies.</p>
+                            <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Vite</span><span class="project-tag">MongoDB</span></div>
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                                <button class="details-button"
+                                    data-title="Course Selling Platform"
+                                    data-image="./assets/project1.png"
+                                    data-tags="React,Vite,MongoDB,Express.js"
+                                    data-desc="This is a full-stack MERN application for buying and selling educational courses. It features user authentication, course creation and management for instructors, and a seamless browsing and purchasing experience for students. The backend is built with Node.js and Express, connected to a MongoDB database."
+                                    data-live-url="#"
+                                    data-source-url="#">
+                                    View Details
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="./assets/project2.png" alt="Project Two" class="project-image">
+                        <img src="./assets/project2.png" alt="Crop Disease Prediction" class="project-image">
                         <div class="project-content">
-                            <h3 class="project-title">Crop disease prediction</h3>
-                            <p class="project-description">This project showcases my Knowledge on building ML models .</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Flask</span>
-                                <span class="project-tag">ML</span>
-                            </div>
+                            <h3 class="project-title">Crop Disease Prediction</h3>
+                            <p class="project-description">An application that uses machine learning to identify diseases in crops from images.</p>
+                            <div class="project-tags"><span class="project-tag">Flask</span><span class="project-tag">ML</span></div>
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                                <button class="details-button"
+                                    data-title="Crop Disease Prediction"
+                                    data-image="./assets/project2.png"
+                                    data-tags="Python,Flask,Machine Learning,TensorFlow"
+                                    data-desc="This project utilizes a machine learning model, built with TensorFlow and Keras, to identify common diseases in various crops from user-uploaded images. The model is served through a lightweight Flask web application that provides a simple interface for users to get predictions."
+                                    data-live-url="#"
+                                    data-source-url="#">
+                                    View Details
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -154,31 +127,83 @@
                         <img src="./assets/devcal1.jpeg" alt="Android calculator" class="project-image">
                         <div class="project-content">
                             <h3 class="project-title">Calculator Application</h3>
-                            <p class="project-description">This project showcases my Native react skills in app building</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Node.js</span>
-                                <span class="project-tag">Express</span>
-                                <span class="project-tag">Native react</span>
-                            </div>
+                            <p class="project-description">This project showcases my React Native skills in cross-platform app building.</p>
+                            <div class="project-tags"><span class="project-tag">React Native</span><span class="project-tag">JavaScript</span></div>
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                                <button class="details-button"
+                                    data-title="Calculator Application"
+                                    data-image="./assets/devcal1.jpeg"
+                                    data-tags="React Native,JavaScript,Expo"
+                                    data-desc="A fully functional calculator application built for both iOS and Android using React Native. This project focuses on creating a responsive and intuitive user interface for a common utility, demonstrating core concepts of mobile app development."
+                                    data-live-url="#"
+                                    data-source-url="#">
+                                    View Details
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="./assets/movie.png" alt="Android calculator" class="project-image">
+                        <img src="./assets/movie.png" alt="Movie app screenshot" class="project-image">
                         <div class="project-content">
                             <h3 class="project-title">Movie App</h3>
-                            <p class="project-description">This project showcases my Skills in React</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Node.js</span>
-                                <span class="project-tag">App Write</span>
-                                <span class="project-tag">React</span>
-                            </div>
+                            <p class="project-description">A responsive web app for browsing and discovering movies, built with React and the TMDB API.</p>
+                            <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Appwrite</span><span class="project-tag">API</span></div>
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                                <button class="details-button"
+                                    data-title="Movie App"
+                                    data-image="./assets/movie.png"
+                                    data-tags="React,API,JavaScript,Appwrite"
+                                    data-desc="A responsive web app for browsing and discovering movies, powered by the TMDB API. This project features search functionality, detailed movie pages, and uses Appwrite for user authentication to allow for personal watchlists and favorite movies."
+                                    data-live-url="#"
+                                    data-source-url="#">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="projects animated-section">
+            <div class="container">
+                <h2 class="section-title">Achievements & Certifications</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="./assets/web_development_certificate.jpg" alt="Certification Image" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Full-Stack Web Development Bootcamp</h3>
+                            <p class="project-description">Completed an intensive bootcamp covering MERN stack, data structures, and algorithms to build and deploy modern web applications.</p>
+                            <div class="project-tags"><span class="project-tag">Udemy</span><span class="project-tag">Certification</span></div>
+                            <div class="project-links">
+                                <button class="details-button"
+                                    data-title="Full-Stack Web Development Bootcamp"
+                                    data-image="./assets/certificate.png"
+                                    data-tags="Udemy,Certification,MERN,Full-Stack"
+                                    data-desc="This comprehensive certification from Udemy signifies proficiency in the MERN (MongoDB, Express, React, Node.js) stack. The curriculum covered building, testing, and deploying full-stack web applications, with a strong focus on industry best practices."
+                                    data-live-url="#"
+                                    data-source-url="#">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./assets/project2.png" alt="Achievement Image" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">IEDC Project Expo - 1st Place</h3>
+                            <p class="project-description">Awarded first place for the 'Crop Disease Prediction' project, recognized for its innovative use of machine learning.</p>
+                            <div class="project-tags"><span class="project-tag">IEDC</span><span class="project-tag">Competition Winner</span></div>
+                            <div class="project-links">
+                                <button class="details-button"
+                                    data-title="IEDC Project Expo - 1st Place"
+                                    data-image="./assets/project2.png"
+                                    data-tags="IEDC,Machine Learning,Innovation"
+                                    data-desc="Our team's project, 'Crop Disease Prediction,' won first place at the IEDC (Innovation and Entrepreneurship Development Centre) Project Expo. The project was celebrated for its practical application of machine learning to address a significant challenge in the agricultural sector."
+                                    data-live-url="#"
+                                    data-source-url="#">
+                                    View Details
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -205,6 +230,17 @@
     <footer class="footer">
         <p>&copy; <span id="current-year"></span> Devamruth A. All Rights Reserved in Kanhangad, Kerala.</p>
     </footer>
+
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close-button" class="modal-close">&times;</button>
+            <img id="modal-image" src="" alt="Project Image" class="modal-image">
+            <h3 id="modal-title" class="modal-title"></h3>
+            <div id="modal-tags" class="project-tags"></div>
+            <p id="modal-desc" class="modal-description"></p>
+            <div id="modal-links" class="modal-links"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

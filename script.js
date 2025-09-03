@@ -62,3 +62,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// --- NEW MODAL POPUP LOGIC ---
+const detailsButtons = document.querySelectorAll('.details-button');
+const modal = document.getElementById('project-modal');
+if (modal) {
+    const modalCloseButton = document.getElementById('modal-close-button');
+    const modalImage = document.getElementById('modal-image');
+    const modalTitle = document.getElementById('modal-title');
+    const modalTags = document.getElementById('modal-tags');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalLinks = document.getElementById('modal-links');
+
+    detailsButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const title = button.dataset.title;
+            const image = button.dataset.image;
+            const tags = button.dataset.tags.split(',');
+            const desc = button.dataset.desc;
+            const liveUrl = button.dataset.liveUrl;
+            const sourceUrl = button.dataset.sourceUrl;
+
+            modalImage.src = image;
+            modalTitle.textContent = title;
+            modalDesc.textContent = desc;
+
+            modalTags.innerHTML = '';
+            tags.forEach(tag => {
+                const tagElement = document.createElement('span');
+                tagElement.className = 'project-tag';
+                tagElement.textContent = tag.trim();
+                modalTags.appendChild(tagElement);
+            });
+            
+            modalLinks.innerHTML = '';
+            if (liveUrl && liveUrl !== '#') {
+                const liveLink = document.createElement('a');
+                liveLink.href = liveUrl;
+                liveLink.textContent = 'Live Demo';
+                liveLink.target = '_blank';
+                modalLinks.appendChild(liveLink);
+            }
+            if (sourceUrl && sourceUrl !== '#') {
+                const sourceLink = document.createElement('a');
+                sourceLink.href = sourceUrl;
+                sourceLink.textContent = 'Source Code';
+                sourceLink.target = '_blank';
+                modalLinks.appendChild(sourceLink);
+            }
+
+            modal.classList.add('show');
+        });
+    });
+
+    const closeModal = () => {
+        modal.classList.remove('show');
+    };
+
+    modalCloseButton.addEventListener('click', closeModal);
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+}
